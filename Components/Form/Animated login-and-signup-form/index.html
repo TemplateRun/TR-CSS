@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login and Signup form</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,500,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div class="section">
+  <div class="cont">
+    <div class="text">
+      <div class="un-user">
+        <h2 class="title">Don't have an account?</h2>
+        <button class="signupbtn" id="signupbtn">Sign up</button>
+      </div>
+
+      <div class="r-user">
+        <h2 class="title1">Have an account?</h2>
+        <button class="loginbtn" id="loginbtn">Login</button>
+      </div>
+    </div>
+    
+    <div class="form" id="form">
+      <div class="login">
+        <h2 class="f-title">Login</h2>
+        <form>
+          <fieldset>
+            <div class="field">
+              <input type="email" placeholder="Email" class="field-input" required autofocus />
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" class="field-input" required />
+            </div>
+          </fieldset>
+          <div class="formbtn">
+            <button type="button" class="formbtn-forgot" id="forgetbtn">Forgot password?</button>
+            <button type="submit" class="formbtn-action">Login</button>
+						<a class="formbtn-mb-button" id="signbtn-mb">Sign up</a>
+          </div>
+        </form>
+      </div>
+      <div class="signup">
+        <h2 class="f-title">Sign Up</h2>
+        <form >
+          <fieldset class="finputfield">
+            <div class="field ">
+              <input type="text" placeholder="Full Name" class="field-input name" required />
+            </div>
+            <div class="field">
+              <input type="email" placeholder="Email" class="field-input" required />
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" class="field-input" required />
+            </div>
+            <div class="field">
+              <input type="number" placeholder="Phone Number" class="field-input" required />
+            </div>
+            <div class="field">
+              <input type="text" placeholder="Address (Line 1)" class="field-input" required />
+            </div>
+            <div class="field">
+              <input type="text" placeholder="Address (Line 2)" class="field-input" required />
+            </div>
+          </fieldset>
+          <div class="formbtn">
+            <button type="submit" class="formbtn-action">Sign up</button>
+						<a class="formbtn-mb-button" id="loginbtn-mb">Login</a>
+          </div>
+           <div class="file">
+            Choose File 
+            <input type="file" class="hide_file"> 
+         </div> 
+        </form>
+      </div>
+			<div class="user_forms-forgot">
+        <h2 class="f-title">Forgot Password</h2>
+        <form>
+          <fieldset>
+            <div class="field">
+              <input type="email" placeholder="Email" class="field-input" required autofocus />
+            </div>
+          </fieldset>
+          <div class="formbtn">
+            <button type="submit" class="formbtn-action">Send reset link</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <script  src="./script.js"></script>
+
+</body>
+</html>

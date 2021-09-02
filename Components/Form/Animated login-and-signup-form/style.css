@@ -1,0 +1,419 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1em;
+}
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #e65c00, #f9d423);
+  background-size: cover;
+}
+.section button {
+  background-color: aliceblue;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+.section input {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+.section input:-ms-input-placeholder {
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #ccc;
+}
+.section input::-moz-placeholder {
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #ccc;
+}
+.section input::placeholder {
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #ccc;
+}
+.section button[type="submit"] {
+  cursor: pointer;
+}
+.section .cont {
+  position: relative;
+  width: 80%;
+}
+.section .text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(201, 75, 3, 0.85);
+  border-radius: 3px;
+}
+.section .r-user,
+.section .un-user {
+  width: 50%;
+  padding: 75px 45px;
+  color: #fff;
+  font-weight: 300;
+}
+.section .title1,
+.section .title {
+  margin-bottom: 15px;
+  font-size: 1.66rem;
+  line-height: 1em;
+}
+.section .user_registered-text,
+.section .user_unregistered-text {
+  font-size: 0.85rem;
+  line-height: 1.4em;
+  letter-spacing: 0.5px;
+}
+.section .loginbtn,
+.section .signupbtn {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px 30px;
+  color: black;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 0.2rem;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.section .loginbtn:hover,
+.section .signupbtn:hover {
+  color: rgba(34, 34, 34, 0.85);
+  background-color: rgb(248, 221, 147);
+}
+.section .form {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  width: calc(50% - 30px);
+  min-height: 460px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transform: translate3d(100%, -50%, 0);
+  transition: transform 0.4s ease-in-out;
+}
+.section .form .login,
+.section .form .signup,
+.section .form .user_forms-forgot {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  width: calc(100% - 80px);
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.login{
+  position: relative;
+  top: 100px !important;
+}
+
+.user_forms-forgot{
+  position: relative;
+  top: 120px !important;
+}
+
+.file {
+ position: relative;
+  top: -35px; 
+  padding:8px 10px;
+  background:#e9691f;
+  border:1px solid #e9691f;
+  color:#fff;
+  border-radius:2px;
+  text-align:center;
+  float:left; 
+  cursor:pointer;
+}
+
+.hide_file {
+  position: absolute;
+  z-index: 1000;
+  opacity: 0;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  height: 100%;
+  font-size: 40px;
+  width: 100%;
+  
+}
+
+
+.section .form .login {
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
+}
+.section .form .signup {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(120px, 0, 0);
+}
+.section .form .signup .formbtn {
+  justify-content: flex-end;
+}
+.section .form .user_forms-forgot {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(120px, 0, 0);
+}
+.section .form .f-title {
+  margin-bottom: 45px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #dd6d11;
+  letter-spacing: 0.1rem;
+}
+.section .form .field:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.section .form .field-input {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 2px 20px 6px 0;
+  font-size: 1rem;
+  font-weight: 300;
+  color: gray;
+  letter-spacing: 0.1rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.section .form .field-input:focus {
+  border-color: gray;
+}
+.section .form .formbtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+}
+.section .form .formbtn-forgot {
+  letter-spacing: 0.1rem;
+  color: #ccc;
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+}
+.section .form .formbtn-forgot:hover {
+  color: #ccc;
+}
+.section .form .formbtn-action {
+  background-color: #e9691f;
+  border-radius: 3px;
+  padding: 10px 35px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+.section .form .formbtn-action:hover {
+  border: 1px solid black;
+  background-color: rgb(253, 253, 253);
+  color: black;
+}
+.section .form .formbtn-mb-button {
+  display: none;
+}
+.section .form.show-signup {
+  display: block;
+  transform: translate3d(2%, -50%, 0);
+}
+.section .form.show-signup .login {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(-150%, 0%, 0);
+}
+.section .form.show-signup .signup {
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
+}
+.section .form.show-login {
+  display: block;
+  transform: translate3d(2%, -50%, 0);
+}
+.section .form.show-login .signup {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(150%, 0%, 0);
+}
+.section .form.show-login .login {
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
+}
+.section .form.forgotpassword {
+  display: block;
+  transform: translate3d(100%, -50%, 0);
+}
+.section .form.forgotpassword .user_forms-forgot {
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
+}
+.section .form.forgotpassword .signup {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(150%, 0%, 0);
+}
+.section .form.forgotpassword .login {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(-120%, 0, 0);
+}
+.section .form.Left {
+  -webkit-animation: Left 1s forwards;
+  animation: Left 1s forwards;
+}
+.section .form.Left .signup {
+  -webkit-animation: showSignUp 1s forwards;
+  animation: showSignUp 1s forwards;
+}
+.section .form.Left .login {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(-120px, 0, 0);
+}
+.section .form.right {
+  -webkit-animation: right 1s forwards;
+  animation: right 1s forwards;
+}
+@media screen and (max-width: 580px) {
+  .section .text {
+    display: none;
+  }
+  .section .form {
+    width: 96%;
+    left: 0;
+    min-height: 400px !important;
+    transform: translate3d(2%, -50%, 0);
+  }
+  .section .form .formbtn-mb-button {
+    display: block;
+    border: 2px solid #f37724;
+    color: #f87f1c;
+    padding: 10px 26px;
+    margin: 20px auto;
+    font-size: 16px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition-duration: 300ms;
+  }
+  .section .form .formbtn-mb-button:hover {
+    background-color: #fd772a;
+    color: #fff;
+    cursor: pointer;
+  }
+  .section .form .f-title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 990px) {
+  .section .cont {
+    width: 90%;
+  }
+  .section .form {
+    min-height: 460px;
+  }
+  .section .form .formbtn {
+    flex-direction: column;
+  }
+  .section .form .login {
+    top: 40px;
+  }
+  .section .form .login .formbtn-action {
+    margin-top: 30px;
+  }
+  .section .form .signup {
+    top: 40px;
+  }
+  .section .r-user,
+  .section .un-user {
+    padding: 50px 45px;
+  }
+  
+
+  /* .finputfield {
+    position: relative;
+    top: -20px !important;
+  } */
+}
+/* @-webkit-keyframes Left {
+  0% {
+    transform: translate3d(100%, -50%, 0);
+  }
+  50% {
+    transform: translate3d(-30px, -50%, 0);
+  }
+  100% {
+    transform: translate3d(0, -50%, 0);
+  }
+} */
+@keyframes Left {
+  0% {
+    transform: translate3d(100%, -50%, 0);
+  }
+  50% {
+    transform: translate3d(-30px, -50%, 0);
+  }
+  100% {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+/* @-webkit-keyframes right {
+  0% {
+    transform: translate3d(0, -50%, 0);
+  }
+  50% {
+    transform: translate3d(calc(100% + 30px), -50%, 0);
+  }
+  100% {
+    transform: translate3d(100%, -50%, 0);
+  }
+} */
+@keyframes right {
+  0% {
+    transform: translate3d(0, -50%, 0);
+  }
+  50% {
+    transform: translate3d(calc(100% + 30px), -50%, 0);
+  }
+  100% {
+    transform: translate3d(100%, -50%, 0);
+  }
+}
+/* @-webkit-keyframes showSignUp {
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+  }
+} */
+@keyframes showSignUp {
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+  }
+}
