@@ -2,13 +2,13 @@
   <img align="center" src=".github/assets/images/TR LOGO new.png" width="35%" /></p>
 
  <p align="center">
-<a href="https://github.com/TemplateRun/TemplateRun.io" alt="GitHub forks">
-<img src="https://img.shields.io/github/forks/TemplateRun/TemplateRun.io?color=red&style=for-the-badge" /></a>
-<a href="https://github.com/TemplateRun/TemplateRun.io" alt="GitHub contributors">
-<img src="https://img.shields.io/github/contributors/TemplateRun/TemplateRun.io?color=blue&style=for-the-badge" /></a>
+<a href="https://github.com/TemplateRun/TR-CSS" alt="GitHub forks">
+<img src="https://img.shields.io/github/forks/TemplateRun/TR-CSS?color=red&style=for-the-badge" /></a>
+<a href="https://github.com/TemplateRun/TR-CSS" alt="GitHub contributors">
+<img src="https://img.shields.io/github/contributors/TemplateRun/TR-CSS?color=blue&style=for-the-badge" /></a>
 <a href="https://github.com/TemplateRun/TemplateRun.io" alt="GitHub star">
-<img src="https://img.shields.io/github/stars/TemplateRun/TemplateRun.io?color=yellow&style=for-the-badge"/></a>
-<a href="https://github.com/TemplateRun/TemplateRun.io" alt="License">
+<img src="https://img.shields.io/github/stars/TemplateRun/TR-CSS?color=yellow&style=for-the-badge"/></a>
+<a href="https://github.com/TemplateRun/TR-CSS" alt="License">
 <img src="https://img.shields.io/apm/l/vim-mode?style=for-the-badge" /></a>
 <a href="https://templaterun.slack.com" alt="slack" >
 <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white" height="30px" width="78px"/></a><br/><br/>
